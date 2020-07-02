@@ -1,7 +1,7 @@
 .navbarContainer {
   display: flex;
   justify-content: space-between;
-  /*background: #232528;*/
+  background: #f4f5f6;
   height: 7.5rem;
 }
 
@@ -33,16 +33,6 @@ body {
 }
 
 .fontAwesomeIcon:hover {
-  color: gray; !important
-}
-
-.fontAwesomeIcon2 {
-  font-size: 3em;
-  color: #232528;
-  margin: 1rem 1rem;
-}
-
-.fontAwesomeIcon2:hover {
   color: gray; !important
 }
 
