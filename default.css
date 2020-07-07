@@ -1,8 +1,26 @@
+/*! GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  background: #f4f5f6;
+  max-width: 1400px;
+  font-family: sans-serif;
+}
+
+.onloadScreen {
+  height: 60vh;
+}
+
+
+/*! NAV BAR ELEMENTS */
 .navbarContainer {
   display: flex;
   justify-content: space-between;
-  background: #f4f5f6;
-  height: 7.5rem;
+  background:  #f4f5f6;
+  height: 5.5rem;
 }
 
 .navbarNbhankes {
@@ -11,38 +29,176 @@
   color: #232528;
   height: 100%;
   font-family: sans-serif;
-  font-size: 6rem;
+  font-size: 4rem;
   margin: 1.5rem 1rem;
-}
-
-body {
-  margin: 0 0;
-  background: #f4f5f6;
 }
 
 .socialMediaContainer {
   display: flex;
   justify-content: center;
-  margin: 1rem 1rem;
+  margin: .5rem 1rem;
 }
 
 .fontAwesomeIcon {
   font-size: 3em;
   color: #232528;
-  margin: 1rem 1rem;
+  margin: .2rem .25em;
 }
 
 .fontAwesomeIcon:hover {
-  color: gray; !important
+  color: rgb(29, 208, 240); !important
 }
 
+/*! LINK ELEMENTS */
+
+.linkContainer {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem 0;
+  background: #232528;
+  color: #f4f5f6;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+}
+
+.linkContainer a {
+  margin: 0.5rem 1.5rem;
+}
+
+.link {
+  z-index: 2;
+}
+
+/*! INTRODUCTION ELEMENTS */
+.introContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.intro {
+  width: 40%;
+  font-family: sans-serif;
+  font-size: 1.8em;
+}
+
+.introSvg {
+  display: float;
+  float: right;
+}
+
+/*! SKILLS LIST */
+
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.skillsUL {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.skillIcon {
+  margin: 0.5rem 1rem;
+  font-size: 4rem;
+}
+
+/*! PORTFOLIO ELEMENTS */
+.portfolioHeader {
+  display: flex;
+  justify-content: center;
+  background:#232528;
+  color: #f4f5f6;
+  height: 3rem;
+  margin-top: 2rem;
+}
+
+.portfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background: #232528;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.portfolioItem {
+  width: 450px;
+  height: 300px;
+  background: #f4f5f6;
+  margin: 2rem 2rem;
+}
+
+/*! RESUME ELEMENTS */
+.resumeHeader {
+  display: flex;
+  justify-content: center;
+  background:#f4f5f6;
+  color: #232528;
+
+  height: 3rem;
+}
+
+.resumeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background: #f4f5f6;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.resumeItem {
+  width: 450px;
+  height: 300px;
+  background: #232528;
+  margin: 2rem 2rem;
+}
+
+/*! CONTACT FORM */
+.contactHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  margin 1 auto;
+} 
+
+.form {
+  height: 20rem;
+  width: 10rem;
+  border: solid 2px black;
+
+}
+
+
+/*! FOOTER ELEMENTS */
+
+
 .footerContainer {
-  position: fixed;
-  left: 0;
-  bottom: 0%;
   width: 100%;
   height: 6rem;
   background: #232528;
   color: #d2d6da;
   font-family: sans-serif;
+}
+
+.programmerSVG {
 }

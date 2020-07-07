@@ -14,9 +14,13 @@
   </head>
 
   <body>
+    <div class="onloadScreen">
+    <!-- ******************* TOP BAR SECTION ******************* -->
     <div class="navbarContainer">
       <div class="navbarNbhankesContainer">
-        <h1 class="navbarNbhankes">N. B. Hankes</h1>
+        <p class="navbarNbhankes">
+          N. B. Hankes
+        </p>
       </div>
   
     <div class="socialMediaContainer">
@@ -50,14 +54,106 @@
         </span>
       </a>
     </div>
+    </div>
+<!-- ******************* LINKS SECTION ******************* -->
+
+  <div class="linkContainer">
+ 
+    <a class="link" onClick="portfolioLink()">PORTFOLIO</a>
+  <a class="link" onClick="resumeLink()">RESUME</a>
+  <a class="link" onClick="contactLink()">CONTACT</a>
+
   </div>
-  <div style="background: red; height: 1.5rem;"></div>
-    <div style="background: orange; height: 1.25rem;"></div>
-    <div style="background: yellow; height: 1rem;"></div>
 
 
+<!-- ******************* INTRODUCTION SECTION ******************* --> 
+  <div class="introContainer">
+  <div class="intro">
+    <p>Hi. My name is Nate.</p> 
+    <p>I'm a chemist that discovered a passion for programming after learning JavaScript to solve a technical challenge.</p> 
+    <p>I them went on for formal training with the #vetswhocode bootcamp.</p>
+  </div>
+  <img class="introSvg" width="58%" height="auto" alt="Illustration of a Programmer" src="/images/programmer_desk.svg" />
+</div>
+<!-- ******************* SKILLS SECTION ******************* --> 
+<div class="skillsContainer">
+  <h1>Skills</h1>
+  <ul class="skillsUL">
+    <li>
+      <span class="skillIcon">
+        <i class="fab fa-html5"></i>
+      </span>
+    </li>
+    <li>
+      <span class="skillIcon">
+        <i class="fab fa-css3-alt"></i>
+      </span>
+    </li>
+    <li>
+      <span class="skillIcon">
+        <i class="fab fa-js"></i>
+      </span>
+    </li>
+    <li>
+      <span class="skillIcon">
+        <i class="fab fa-git-alt"></i>
+      </span>
+    </li>
+    <li>
+      <span class="skillIcon">
+        <i class="fab fa-node"></i>
+      </span>
+    </li>
+    <li>
+      <span class="skillIcon">
+        <i class="fab fa-react"></i>
+      </span>
+    </li>
+  </ul>
+</div>
+</div>
+
+<!-- ******************* PORTFOLIO SECTION ******************* -->
+<div id="portfolio" class="portfolioHeader">
+  <h1>Recent Projects</h1>
+</div>    
+<div class="portfolioContainer">  
+      <div class="portfolioItem"></div>
+      <div class="portfolioItem"></div>
+      <div class="portfolioItem"></div>
+      <div class="portfolioItem"></div>
 
 
+    </div>
+
+<!-- ******************* RESUME SECTION ******************* -->
+<div id="resume" class="resumeHeader">
+  <h1 >Resume</h1>
+</div>    
+<div class="resumeContainer">  
+      <div class="resumeItem"></div>
+      <div class="resumeItem"></div>
+      <div class="resumeItem"></div>
+      <div class="resumeItem"></div>
+      <div class="resumeItem"></div>
+      <div class="resumeItem"></div>
+    </div>
+
+<!-- ******************* CONTACT SECTION ******************* -->
+<div id="contact" class="contactHeader">
+  <h1>Contact</h1>
+</div>    
+<div class="formContainer">
+  <form class="form">  
+    Name:<input type="text" value="name"/>
+    Email:<input type="text" value="email"/>
+    Number:<input type="text" value="number"/>
+    Message:<textarea width="100%" height="90%" type="text"></textarea>
+    <input type="submit" value="Send Message"></input>
+  </form>
+</div>
+
+<!-- ******************* CDN SCRIPTS ******************* -->
     <script
       src="https://kit.fontawesome.com/657104b75a.js"
       crossorigin="anonymous"
@@ -69,5 +165,6 @@
   <footer class="footerContainer">
     Technical resources used in the production of this website:
     <a href="https://icons8.com/icon/Cc2VV8Yxnd0k/laptop-coding">Laptop Coding icon by Icons8</a>
+    <a href="https://www.freepik.com/free-photos-vectors/web">Web vector created by stories - www.freepik.com</a>
   </footer>
 </html>
