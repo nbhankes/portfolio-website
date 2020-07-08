@@ -11,6 +11,9 @@
     />
     <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js defer></script>
     <script type="text/javascript" src="script.js" defer></script>
+    <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+ 
   </head>
 
   <body>
@@ -70,14 +73,14 @@
   <div class="introContainer">
   <div class="intro">
     <p>Hi. My name is Nate.</p> 
-    <p>I'm a chemist that discovered a passion for programming after learning JavaScript to solve a technical challenge.</p> 
-    <p>I them went on for formal training with the #vetswhocode bootcamp.</p>
+    <p>I'm a chemist that discovered a passion for programming after learning JavaScript to solve a professional challenge.</p> 
+    <p>I then went on for formal training with the #vetswhocode bootcamp.</p>
   </div>
   <img class="introSvg" width="58%" height="auto" alt="Illustration of a Programmer" src="/images/programmer_desk.svg" />
 </div>
+</div>
 <!-- ******************* SKILLS SECTION ******************* --> 
 <div class="skillsContainer">
-  <h1>Skills</h1>
   <ul class="skillsUL">
     <li>
       <span class="skillIcon">
@@ -111,7 +114,7 @@
     </li>
   </ul>
 </div>
-</div>
+
 
 <!-- ******************* PORTFOLIO SECTION ******************* -->
 <div id="portfolio" class="portfolioHeader">
@@ -145,19 +148,21 @@
 </div>    
 <div class="formContainer">
   <form class="form">  
-    Name:<input type="text" value="name"/>
-    Email:<input type="text" value="email"/>
-    Number:<input type="text" value="number"/>
-    Message:<textarea width="100%" height="90%" type="text"></textarea>
-    <input type="submit" value="Send Message"></input>
+    <input type="text" alt="Please add your first and last name." placeholder="Jane Doe"/>
+    <input type="text" alt="Please add your email address." placeholder="Jane@email.com"/>
+    <input type="text" alt="Please add your phone number." placeholder="(800) 555-4321"/>
+    <textarea width="100%" height="90%" type="text" alt="Please type your message here." placeholder="Hey! Let's work together."></textarea>
+    <input type="submit" id="submit" value="Send Message" onClick="submissionAlert()"></input>
   </form>
 </div>
 
 <!-- ******************* CDN SCRIPTS ******************* -->
+
     <script
       src="https://kit.fontawesome.com/657104b75a.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
   </body>
 

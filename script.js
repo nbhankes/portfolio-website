@@ -1,4 +1,8 @@
+//! **************** GSAP ANIMATIONS ****************
+
 gsap.from(".socialMediaContainer", { duration: 1, y: "-100" });
+
+//! **************** LINK SMOOTH SCROLLING ****************
 
 function portfolioLink() {
   var portfolio = document.getElementById("portfolio");
@@ -27,5 +31,17 @@ function contactLink() {
     behavior: "smooth",
     block: "start",
     inline: "nearest",
+  });
+}
+
+//! **************** FORM BEHAVIOR ****************
+
+function submissionAlert() {
+  event.preventDefault();
+  Swal.fire({
+    icon: "success",
+    title: "Thank you!",
+    text: "You'll hear back shortly.",
+    showConfirmButton: false,
   });
 }

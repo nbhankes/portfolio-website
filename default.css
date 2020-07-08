@@ -178,16 +178,41 @@ body {
 .formContainer {
   display: flex;
   justify-content: center;
-  margin 1 auto;
+  margin: 1rem auto;
+
 } 
 
 .form {
-  height: 20rem;
-  width: 10rem;
-  border: solid 2px black;
+  width: 35%;
+  /*border: solid 2px black;*/
+  padding: 1rem 1rem;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form input {
+  border-radius: 3px;
+  height: 2.3rem;
+  width: 90%;
+  margin: 1rem 0;
+  decoration: none;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  outline:none;
 
 }
 
+.form textarea {
+  width: 90%;
+  min-height: 3rem;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  outline: none;
+}
 
 /*! FOOTER ELEMENTS */
 
@@ -198,7 +223,5 @@ body {
   background: #232528;
   color: #d2d6da;
   font-family: sans-serif;
-}
-
-.programmerSVG {
+  margin-top: 6rem;
 }
