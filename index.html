@@ -121,9 +121,23 @@
   <h1>Recent Projects</h1>
 </div>    
 <div class="portfolioContainer">  
-      <div class="portfolioItem"></div>
-      <div class="portfolioItem"></div>
-      <div class="portfolioItem"></div>
+      <div class="portfolioItem">
+        <div class="portfolioTopBar">
+          <h2>Cohort Team Website</h2>
+          <a href="https://github.com/nbhankes/VWC-Week-1-Team-Project">
+            <span class="fontAwesomeIcon">
+              <i class="fab fa-github-square"></i>
+            </span>
+          </a>
+        </div>
+        <div class=iframeContainer>
+          <iframe src="https://team1-vwc.surge.sh/" style="justify-content: center"></iframe>
+        </div>
+        <div class="portfolioBtnContainer">
+          <button class="portfolioBtn" onclick="portfolioCohort()">What I Learned</button>
+        </div>
+
+      </div>
       <div class="portfolioItem"></div>
 
 
@@ -131,15 +145,15 @@
 
 <!-- ******************* RESUME SECTION ******************* -->
 <div id="resume" class="resumeHeader">
-  <h1 >Resume</h1>
+  <h1>Resume</h1>
+
 </div>    
 <div class="resumeContainer">  
       <div class="resumeItem"></div>
       <div class="resumeItem"></div>
       <div class="resumeItem"></div>
       <div class="resumeItem"></div>
-      <div class="resumeItem"></div>
-      <div class="resumeItem"></div>
+
     </div>
 
 <!-- ******************* CONTACT SECTION ******************* -->
@@ -152,7 +166,7 @@
     <input type="text" alt="Please add your email address." placeholder="Jane@email.com"/>
     <input type="text" alt="Please add your phone number." placeholder="(800) 555-4321"/>
     <textarea width="100%" height="90%" type="text" alt="Please type your message here." placeholder="Hey! Let's work together."></textarea>
-    <input type="submit" id="submit" value="Send Message" onClick="submissionAlert()"></input>
+    <input type="submit" value="Send Message" onClick="submissionAlert()"></input>
   </form>
 </div>
 
