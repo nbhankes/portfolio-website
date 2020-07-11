@@ -34,6 +34,28 @@ function contactLink() {
   });
 }
 
+//! **************** INTRO TEXT ****************
+
+var introText = document.getElementById("introText");
+
+var typewriter = new Typewriter(introText, {
+  loop: false,
+});
+
+typewriter
+  .typeString("My name is Nate.")
+  .pauseFor(200)
+  .deleteAll()
+  .typeString("I'm a chemist.")
+  .pauseFor(200)
+  .deleteAll()
+  .typeString("I recently graduated from the #vetswhocode bootcamp.")
+  .pauseFor(100)
+  .deleteAll()
+  .typeString("This is my journey into Tech.")
+  .pauseFor(5000)
+  .start();
+
 //! **************** PORTFOLIO BEHAVIOR ****************
 
 function portfolioCohort() {

@@ -12,8 +12,7 @@
     <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js defer></script>
     <script type="text/javascript" src="script.js" defer></script>
     <script src="sweetalert2.min.js"></script>
-<link rel="stylesheet" href="sweetalert2.min.css">
- 
+    <link rel="stylesheet" href="sweetalert2.min.css">
   </head>
 
   <body>
@@ -26,161 +25,184 @@
         </p>
       </div>
   
-    <div class="socialMediaContainer">
-      <a href="https://twitter.com/nbhankes">
-        <span class="fontAwesomeIcon">
+      <div class="socialMediaContainer">
+        <a href="https://twitter.com/nbhankes">
+         <span class="fontAwesomeIcon">
           <i class="fab fa-twitter-square"></i>
-        </span>
-      </a>
+         </span>
+        </a>
 
-      <a href="https://www.linkedin.com/in/nbhankes">
-        <span class="fontAwesomeIcon">
-          <i class="fab fa-linkedin"></i>
-        </span>
-      </a>
+        <a href="https://www.linkedin.com/in/nbhankes">
+          <span class="fontAwesomeIcon">
+            <i class="fab fa-linkedin"></i>
+          </span>
+        </a>
 
-      <a href="https://github.com/nbhankes">
-        <span class="fontAwesomeIcon">
-          <i class="fab fa-github-square"></i>
-        </span>
-      </a>
+        <a href="https://github.com/nbhankes">
+          <span class="fontAwesomeIcon">
+            <i class="fab fa-github-square"></i>
+          </span>
+        </a>
 
-      <a href="https://codepen.io/nbhankes">
-        <span class="fontAwesomeIcon">
-          <i class="fab fa-codepen"></i>
-        </span>
-      </a>
+        <a href="https://codepen.io/nbhankes">
+          <span class="fontAwesomeIcon">
+            <i class="fab fa-codepen"></i>
+          </span>
+        </a>
 
-      <a href="https://dev.to/nbhankes">
-        <span class="fontAwesomeIcon">
-          <i class="fab fa-dev"></i>
-        </span>
-      </a>
-    </div>
+        <a href="https://dev.to/nbhankes">
+          <span class="fontAwesomeIcon">
+            <i class="fab fa-dev"></i>
+          </span>
+        </a>
+      </div>
     </div>
 <!-- ******************* LINKS SECTION ******************* -->
 
-  <div class="linkContainer">
+    <div class="linkContainer">
  
-    <a class="link" onClick="portfolioLink()">PORTFOLIO</a>
-  <a class="link" onClick="resumeLink()">RESUME</a>
-  <a class="link" onClick="contactLink()">CONTACT</a>
+      <a class="link" onClick="portfolioLink()">PORTFOLIO</a>
+      <a class="link" onClick="resumeLink()">RESUME</a>
+      <a class="link" onClick="contactLink()">CONTACT</a>
 
-  </div>
+    </div>
 
 
 <!-- ******************* INTRODUCTION SECTION ******************* --> 
-  <div class="introContainer">
-  <div class="intro">
-    <p>Hi. My name is Nate.</p> 
-    <p>I'm a chemist that discovered a passion for programming after learning JavaScript to solve a professional challenge.</p> 
-    <p>I then went on for formal training with the #vetswhocode bootcamp.</p>
-  </div>
-  <img class="introSvg" width="58%" height="auto" alt="Illustration of a Programmer" src="/images/programmer_desk.svg" />
-</div>
-</div>
-<!-- ******************* SKILLS SECTION ******************* --> 
-<div class="skillsContainer">
-  <ul class="skillsUL">
-    <li>
-      <span class="skillIcon">
-        <i class="fab fa-html5"></i>
-      </span>
-    </li>
-    <li>
-      <span class="skillIcon">
-        <i class="fab fa-css3-alt"></i>
-      </span>
-    </li>
-    <li>
-      <span class="skillIcon">
-        <i class="fab fa-js"></i>
-      </span>
-    </li>
-    <li>
-      <span class="skillIcon">
-        <i class="fab fa-git-alt"></i>
-      </span>
-    </li>
-    <li>
-      <span class="skillIcon">
-        <i class="fab fa-node"></i>
-      </span>
-    </li>
-    <li>
-      <span class="skillIcon">
-        <i class="fab fa-react"></i>
-      </span>
-    </li>
-  </ul>
-</div>
-
+    <div class="introContainer">
+      <div class="introText" id="introText" onload="typeWriter()"></div>
+        <img class="introSvg" width="58%" height="auto" alt="Illustration of a Programmer" src="/images/programmer_desk.svg" />
+      </div>
+    </div>
 
 <!-- ******************* PORTFOLIO SECTION ******************* -->
 <!-- ************** MAKE EACH Portfolio DIV LOOK LIKE iPhone? ****************** -->
-<div id="portfolio" class="portfolioHeader">
-  <h1>Recent Projects</h1>
-</div>    
-<div class="portfolioContainer">  
-      <div class="portfolioItem">
-        <div class="portfolioTopBar">
-          <h2>Cohort Team Website</h2>
-          <a href="https://github.com/nbhankes/VWC-Week-1-Team-Project">
-            <span class="fontAwesomeIcon">
-              <i class="fab fa-github-square"></i>
-            </span>
-          </a>
-        </div>
-        <div class=iframeContainer>
-          <iframe src="https://team1-vwc.surge.sh/" style="justify-content: center"></iframe>
+    <div id="portfolio" class="portfolioHeader">
+      <div class="portfolioHeaderText"><h1>Recent Projects</h1></div>
+    </div>    
+    <div class="portfolioContainer">
+      <div class=portfolioItemWithBtn> 
+        <div class="portfolioItem">
+          <div class="portfolioTopBar">
+           <h2>Cohort Team Website</h2>
+          </div>
+          <hr/>
+          <div class=iframeContainer>
+            <iframe src="https://team1-vwc.surge.sh/" style="justify-content: center"></iframe>
+          </div>
+          <hr/>
+          <div class="portfolioGitContainer">
+            <a href="https://github.com/nbhankes/VWC-Week-1-Team-Project">
+              <span class="fontAwesomeIcon">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+          </div>
         </div>
         <div class="portfolioBtnContainer">
           <button class="portfolioBtn" onclick="portfolioCohort()">What I Learned</button>
         </div>
-
       </div>
-      <div class="portfolioItem"></div>
 
+      <div class=portfolioItemWithBtn> 
+        <div class="portfolioItem">
+          <div class="portfolioTopBar">
+           <h2>Business Website</h2>
+          </div>
+          <hr/>
+          <div class=iframeContainer>
+            <iframe src="https://galactic-mc.surge.sh/" style="justify-content: center"></iframe>
+          </div>
+          <hr/>
+          <div class="portfolioGitContainer">
+            <a href="https://github.com/nbhankes/Ficticious-Business-Design-Project">
+              <span class="fontAwesomeIcon">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="portfolioBtnContainer">
+          <button class="portfolioBtn" onclick="portfolioCohort()">What I Learned</button>
+        </div>
+      </div>
 
     </div>
 
 <!-- ******************* RESUME SECTION ******************* -->
-<div id="resume" class="resumeHeader">
-  <h1>Resume</h1>
+    <div id="resume" class="resumeHeader">
+     <h1>Resume</h1>
+    </div> 
 
-</div>    
-<div class="resumeContainer">  
+    <div class="resumeContainer">  
       <div class="resumeItem"></div>
       <div class="resumeItem"></div>
       <div class="resumeItem"></div>
       <div class="resumeItem"></div>
 
+<!-- ******************* SKILLS SECTION ******************* --> 
+      <div class="skillsContainer">
+        <ul class="skillsUL">
+          <li>
+            <span class="skillIcon">
+             <i class="fab fa-html5"></i>
+            </span>
+          </li>
+          <li>
+            <span class="skillIcon">
+             <i class="fab fa-css3-alt"></i>
+            </span>
+          </li>
+          <li>
+            <span class="skillIcon">
+             <i class="fab fa-js"></i>
+            </span>
+          </li>
+          <li>
+            <span class="skillIcon">
+              <i class="fab fa-git-alt"></i>
+            </span>
+          </li>
+          <li>
+            <span class="skillIcon">
+              <i class="fab fa-node"></i>
+            </span>
+          </li>
+          <li>
+            <span class="skillIcon">
+              <i class="fab fa-react"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+      
     </div>
 
 <!-- ******************* CONTACT SECTION ******************* -->
-<div id="contact" class="contactHeader">
-  <h1>Contact</h1>
-</div>    
-<div class="formContainer">
-  <form class="form">  
-    <input type="text" alt="Please add your first and last name." placeholder="Jane Doe"/>
-    <input type="text" alt="Please add your email address." placeholder="Jane@email.com"/>
-    <input type="text" alt="Please add your phone number." placeholder="(800) 555-4321"/>
-    <textarea width="100%" height="90%" type="text" alt="Please type your message here." placeholder="Hey! Let's work together."></textarea>
-    <input type="submit" value="Send Message" onClick="submissionAlert()"></input>
-  </form>
-</div>
+    <div id="contact" class="contactHeader">
+      <h1>Contact</h1>
+    </div>    
+    <div class="formContainer">
+      <form class="form">  
+        <input type="text" alt="Please add your first and last name." placeholder="Jane Doe"/>
+        <input type="text" alt="Please add your email address." placeholder="Jane@email.com"/>
+        <input type="text" alt="Please add your phone number." placeholder="(800) 555-4321"/>
+        <textarea width="100%" height="90%" type="text" alt="Please type your message here." placeholder="Hey! Let's work together."></textarea>
+        <input type="submit" value="Send Message" onClick="submissionAlert()"></input>
+      </form>
+    </div>
 
-<!-- ******************* CDN SCRIPTS ******************* -->
 
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script
       src="https://kit.fontawesome.com/657104b75a.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-
   </body>
 
+  <!-- ******************* FOOTER ******************* -->
 
   <footer class="footerContainer">
     Technical resources used in the production of this website:
