@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0 auto;
-  background: #ffffff;
+  background: #dde1e7;
   max-width: 85rem;
   width: auto;
   font-family: Helvetica, Lucida, sans-serif;
@@ -16,8 +16,8 @@ body {
 .navbarContainer {
   display: flex;
   justify-content: space-between;
-  background:  #ffffff;
   height: 5.5rem;
+  width: 100%;
 }
 
 .navbarNbhankes {
@@ -81,7 +81,7 @@ body {
 
 .introText {
   font-family: sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   width: 50%;
 }
 
@@ -103,6 +103,7 @@ body {
   color: #ffffff;
   height: 10rem;
   box-shadow: 0 0 20px white;
+  width: 100%;
 }
 
 .portfolioHeaderText {
@@ -114,15 +115,13 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  background:linear-gradient( #5286a3, #bcbdbd);
   width: 100%;
   height: auto;
   margin: 0 auto;
-  height: 50rem;
 }
 
 .portfolioItemWithBtn {
-  display:block;
+  display: block;
   height: 50rem;
 }
 
@@ -134,7 +133,11 @@ body {
   margin: 2rem 2rem;
   overflow: hidden;
   padding: 0.2rem 0.2rem;
-  box-shadow: 6px 6px 10px #272b34;
+  box-shadow: inset -2px -2px 4px #272b34, inset 2px 2px 3px #ffffff, -4px -4px 14px #ffffff, 6px 6px 14px #272b34;
+}
+
+.portfolioItem:hover {
+  box-shadow: inset -2px -2px 4px #272b34, inset 2px 2px 3px #ffffff, -4px -4px 19px #ffffff, 8px 8px 18px #272b34;
 }
 
 .portfolioTopBar {
@@ -146,6 +149,9 @@ body {
 .iframeContainer {
   text-align: center;
   height: 70%;
+  width:98%;
+  margin: 0rem auto;
+  background: white;
   overflow: hidden;
 }
 
@@ -167,13 +173,19 @@ iframe {
 }
 
 .portfolioBtn {
-  background:#3b7cdc;
+  background:white;
   height: 3rem;
   width: 50%;
   border-radius: 10px;
   font-size: 1.5rem;
   border: none;
-  box-shadow: 6px 6px 10px #272b34;
+  outline: none;
+  box-shadow: inset -2px -2px 4px #272b34, inset 2px 2px 3px white;
+}
+
+.portfolioBtn:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 2px black, inset -1px -1px 3px gray, 2px 2px 3px white, -2px -2px 4px #272b34;
 }
 
 .portfolioGitContainer {
@@ -184,12 +196,13 @@ iframe {
 
 /*! RESUME ELEMENTS */
 .resumeHeader {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  background:#ffffff;
-  color:#272b34;
-
-  height: 3rem;
+  justify-content: left;
+  background: linear-gradient(217deg, #272b34, #bcbdbd);
+  color: #ffffff;
+  height: 10rem;
+  box-shadow: 0 0 20px white;
 }
 
 .resumeContainer {
@@ -197,7 +210,6 @@ iframe {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  background: #ffffff;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -213,8 +225,10 @@ iframe {
 /*! SKILLS LIST */
 
 .skillsContainer {
+  width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 0.5rem 0;
 }
 
