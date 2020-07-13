@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0 auto;
-  background: #dde1e7;
+  background: 		#f5f5f5;
   max-width: 85rem;
   width: auto;
   font-family: Helvetica, Lucida, sans-serif;
@@ -43,7 +43,7 @@ body {
 }
 
 .fontAwesomeIcon:hover {
-  color:#3b7cdc; !important
+  color:#407bff; !important
 }
 
 /*! LINK ELEMENTS */
@@ -55,8 +55,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0.25rem 0;
-  background: linear-gradient(217deg, #272b34, #bcbdbd);
-  color: #ffffff;
+  background: linear-gradient(37deg, #263238 55%, #35599c);
+  color: #ecf2ff;
   font-family: sans-serif;
   font-size: 1.6rem;
 }
@@ -82,7 +82,7 @@ body {
 .introText {
   font-family: sans-serif;
   font-size: 3rem;
-  width: 50%;
+  width: 70%;
 }
 
 .introSvg {
@@ -99,15 +99,18 @@ body {
 .portfolioHeader {
   display: flex;
   justify-content: left;
-  background: linear-gradient(217deg, #272b34, #bcbdbd);
-  color: #ffffff;
+  background: #263238;
+  color: #ecf2ff;
   height: 10rem;
   box-shadow: 0 0 20px white;
   width: 100%;
 }
 
 .portfolioHeaderText {
-
+float: left;
+font-size: 2.2rem;
+padding-left: 1rem;
+margin-top: .5rem;
 }
 
 .portfolioContainer {
@@ -123,6 +126,7 @@ body {
 .portfolioItemWithBtn {
   display: block;
   height: 50rem;
+  margin-bottom: 1rem;
 }
 
 .portfolioItem {
@@ -133,11 +137,11 @@ body {
   margin: 2rem 2rem;
   overflow: hidden;
   padding: 0.2rem 0.2rem;
-  box-shadow: inset -2px -2px 4px #272b34, inset 2px 2px 3px #ffffff, -4px -4px 14px lightgray, 6px 6px 14px gray;
+  box-shadow: inset -2px -2px 4px #272b34, inset 1px 1px 3px rgb(38, 50, 56,0.7), -4px -4px 14px lightgray, 6px 6px 14px gray;
 }
 
 .portfolioItem:hover {
-  box-shadow: inset -2px -2px 4px #272b34, inset 2px 2px 3px #ffffff, -4px -4px 19px lightgray, 8px 8px 18px #272b34;
+  box-shadow: inset -2px -2px 4px #272b34, inset 1px 1px 3px rgb(38, 50, 56,0.7), -4px -4px 19px lightgray, 8px 8px 18px #272b34;
 }
 
 .portfolioTopBar {
@@ -173,11 +177,13 @@ iframe {
 }
 
 .portfolioBtn {
-  background:white;
-  height: 3rem;
-  width: 50%;
+  background:#263238;
+  color: #ecf2ff;
+  height: 4rem;
+  width: 70%;
   border-radius: 10px;
-  font-size: 1.5rem;
+
+  font-size: 2.5rem;
   border: none;
   outline: none;
   box-shadow: inset -2px -2px 4px #272b34, inset 2px 2px 3px white;
@@ -200,7 +206,7 @@ iframe {
   display: flex;
   justify-content: left;
   background: linear-gradient(217deg, #272b34, #bcbdbd);
-  color: #ffffff;
+  color: #ecf2ff;
   height: 10rem;
   box-shadow: 0 0 20px white;
 }
