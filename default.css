@@ -2,22 +2,93 @@
 html {
   scroll-behavior: smooth;
   width: 100%;
+  --content: 85rem;
+}
+
+:root {
+  --primary-color: #302ae6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
 }
 
 body {
   margin: 0 auto;
-  background: 		#f5f5f5;
-  max-width: 85rem;
-  width: auto;
+  background:	#f5f5f5;
   font-family: Helvetica, Lucida, sans-serif;
 }
+
+/*! TOGGLE */
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 
 /*! NAV BAR ELEMENTS */
 .navbarContainer {
   display: flex;
   justify-content: space-between;
   height: 5.5rem;
-  width: 100%;
 }
 
 .navbarNbhankes {
@@ -55,7 +126,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0.25rem 0;
-  background: linear-gradient(37deg, #263238 55%, #35599c);
+  background: var(--heading-color);
   color: #ecf2ff;
   font-family: sans-serif;
   font-size: 1.6rem;
@@ -74,7 +145,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
+  width: var(--content);
   height: 30rem;
   margin: 0 auto;
 }
