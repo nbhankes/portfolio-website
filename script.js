@@ -82,9 +82,9 @@ var typewriter = new Typewriter(introText, {
 
 typewriter
   .typeString("My name is Nate.")
-  .pauseFor(500)
+  .pauseFor(300)
   .typeString(" And This is my journey into Tech.")
-  .pauseFor(5000)
+  .pauseFor(3000)
   .start()
 
 //! **************** PORTFOLIO BEHAVIOR ****************

@@ -9,21 +9,23 @@ html {
   --primary-color: #302ae6;
   --secondary-color: #536390;
   --font-color: #424242;
-  --bg-color: #fff;
+  --bg-color: #f5f5f5;
   --heading-color: #292922;
+  --accent: #407bff;
 }
 
 [data-theme="dark"] {
   --primary-color: #9a97f3;
   --secondary-color: #818cab;
   --font-color: #e1e1ff;
-  --bg-color: #161625;
-  --heading-color: #818cab;
+  --bg-color: #818cab;
+  --heading-color: #263238;
+  --accent: orange;
 }
 
 body {
   margin: 0 auto;
-  background:	#f5f5f5;
+  background:	var(--bg-color);
   font-family: Helvetica, Lucida, sans-serif;
 }
 
@@ -46,7 +48,9 @@ body {
 }
 
 .slider {
-  background-color: #ccc;
+  background: rgb(255,195,29);
+  background: linear-gradient(98deg, rgba(255,195,29,1) 40%, rgba(8,9,179,1) 65%);
+  box-shadow: inset 1px 1px 1px #263238, inset -1px -1px 2px gray, 1px 1px 2px white, -2px -2px 4px #272b34;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -65,6 +69,7 @@ body {
   position: absolute;
   transition: 0.4s;
   width: 26px;
+  box-shadow: inset -2px -2px 4px #272b34, inset 2px 2px 3px white;
 }
 
 input:checked + .slider {
@@ -77,6 +82,7 @@ input:checked + .slider:before {
 
 .slider.round {
   border-radius: 34px;
+
 }
 
 .slider.round:before {
@@ -94,7 +100,7 @@ input:checked + .slider:before {
 .navbarNbhankes {
   display: flex;
   justify-content: end;
-  color:#272b34;
+  color:var(--heading-color);
   height: 100%;
   font-family: sans-serif;
   font-size: 4rem;
@@ -109,12 +115,12 @@ input:checked + .slider:before {
 
 .fontAwesomeIcon {
   font-size: 3em;
-  color:#272b34;
+  color:var(--font-color);
   margin: .2rem .25em;
 }
 
 .fontAwesomeIcon:hover {
-  color:#407bff; !important
+  color:var(--accent); !important
 }
 
 /*! LINK ELEMENTS */
@@ -170,10 +176,9 @@ input:checked + .slider:before {
 .portfolioHeader {
   display: flex;
   justify-content: left;
-  background: #263238;
+  background: var(--heading-color);
   color: #ecf2ff;
   height: 10rem;
-  box-shadow: 0 0 20px white;
   width: 100%;
 }
 
@@ -276,10 +281,9 @@ iframe {
   width: 100%;
   display: flex;
   justify-content: left;
-  background: linear-gradient(217deg, #272b34, #bcbdbd);
+  background: var(--heading-color);
   color: #ecf2ff;
   height: 10rem;
-  box-shadow: 0 0 20px white;
 }
 
 .resumeContainer {
